@@ -1,0 +1,74 @@
+/*################### ALL ################### */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*################### COMMON ################### */
+
+ :root {
+     --color-blue: #0084fd;
+     --color-lightblue: #b5ddff;
+     --color-purple: #9792e4;
+     --color-white: #fff;
+     --color-black: #000;
+     --accent-color: #fdc15f;
+ }
+
+ .d-flex {
+     display: flex;
+ }
+
+ .portrait{
+     width: 100%;
+     height: 100%;
+     object-fit:cover;
+     border-radius: 100%;
+ }
+
+/*################### HEADER ###################*/
+
+.header-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-blue);
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.hamburger-menu{
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+/*################### MEDIA QUERY ################### */
+
+
+/* @@@@@@ TABLET @@@@@@ */
+
+@media all and (min-width: 768px) {
+    
+}
+
+/* @@@@@@ DESKTOP @@@@@@ */
+
+@media all and (min-width: 992px) {
+
+}
+
+/* @@@@@@ LARGE DESKTOP @@@@@@ */
+
+@media all and (min-width: 1200px) {
+
+}
