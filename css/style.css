@@ -1,4 +1,6 @@
-/*################### ALL ################### */
+/*################### 
+        ALL 
+################### */
 
 *{
     margin: 0;
@@ -12,7 +14,9 @@ ul {
 }
 
 
-/*################### COMMON ################### */
+/*################### 
+        COMMON 
+################### */
 
  :root {
      --color-blue: #0084fd;
@@ -34,7 +38,13 @@ ul {
      border-radius: 100%;
  }
 
-/*################### HEADER ###################*/
+ .button{
+     border-radius: 20px;
+ }
+
+/*################### 
+        HEADER 
+###################*/
 
 .header-container{
     position: fixed;
@@ -42,30 +52,81 @@ ul {
     left: 0;
     background-color: var(--color-blue);
     width: 100%;
-    justify-content: space-between;
+    height: 60px;
     padding: 10px 20px;
     z-index: 1;
 }
 
-.hamburger-menu{
+.misure-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-bars {
     color: var(--color-white);
     font-size: 2rem;
 }
 
-/*################### MEDIA QUERY ################### */
+.desktop-menu {
+    display: none;
+}
+
+.desktop-menu li {
+    display: inline-block;
+}
+
+.menu-voices {
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu-button{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 10px;
+}
 
 
-/* @@@@@@ TABLET @@@@@@ */
+
+/*################### 
+        MAIN
+###################*/
+
+
+/*################### 
+    MEDIA QUERY 
+################### */
+
+
+/* @@@@@@  TABLET @@@@@@ */
 
 @media all and (min-width: 768px) {
-    
+    .desktop-menu {
+        display: none;
+    }
 }
+     
 
 /* @@@@@@ DESKTOP @@@@@@ */
 
 @media all and (min-width: 992px) {
+    
+    .misure-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .desktop-menu {
+        display:block;
+    }
 
+    .fa-bars {
+        display: none;
+    }
 }
+  
 
 /* @@@@@@ LARGE DESKTOP @@@@@@ */
 
