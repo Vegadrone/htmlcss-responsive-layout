@@ -13,6 +13,9 @@ ul {
     list-style: none;
 }
 
+main{
+    margin-top: 120px;
+}
 
 /*################### 
         COMMON 
@@ -38,8 +41,9 @@ ul {
      border-radius: 100%;
  }
 
- .button{
-     border-radius: 20px;
+ .btn{
+    border-radius: 20px;
+    padding: 10px;
  }
 
 /*################### 
@@ -82,18 +86,69 @@ ul {
     margin: 10px;
 }
 
-.menu-button{
+.menu-btn {
     background-color: var(--color-white);
     color: var(--color-black);
-    padding: 10px;
 }
-
-
 
 /*################### 
         MAIN
 ###################*/
 
+/* @@@@@@ APP SECTION @@@@@@ */
+
+.card {
+    background-color: var(--color-lightblue);
+    border-radius: 20px;
+    margin: 0px 30px 2rem 30px;
+}
+
+.card-content {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card-title {
+    color: var(--color-blue);
+    margin: 2rem 0rem;
+}
+
+.card p {
+    text-align:center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.app-btn{
+    text-decoration: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 15px 60px;
+    /* il VP del mio smartphone è di 320px
+    se lascio queste misure il bottone si rompe.
+    Se metto: 15px 40px, no... ma il bottone diventa
+    veramente piccolo, necessario altro BP? */
+}
+
+.fa-apple{
+    margin-right: 10px;
+}
+
+.card img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: -15px;   
+}
+
+.card .fa-solid {
+    font-size:8rem;
+    margin-top: 2rem;
+    color: var(--color-blue);
+}
 
 /*################### 
     MEDIA QUERY 
@@ -103,8 +158,32 @@ ul {
 /* @@@@@@  TABLET @@@@@@ */
 
 @media all and (min-width: 768px) {
+    
+/* ++++ HEADER ++++ */
     .desktop-menu {
         display: none;
+    }
+/* ++++ MAIN ++++ */
+
+/* --- APP SECTION ---  */
+
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .demo-card{
+        width: 60%;
+    }
+
+    .code-card{
+        width:30%;
+    }
+
+    .web-card,
+    .dev-card,
+    .branding-card {
+        width: 30%;
     }
 }
      
