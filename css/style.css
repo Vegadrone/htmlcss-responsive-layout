@@ -106,10 +106,6 @@ main{
 
 /* @@@@@@ APP SECTION @@@@@@ */
 
-.cards-container{
-    width: 100%;
-}
-
 .card {
     background-color: var(--color-lightblue);
     border-radius: 20px;
@@ -119,6 +115,7 @@ main{
 
 .card-content {
     text-align: center;
+    align-items: center;
 }
 
 .card-title {
@@ -138,6 +135,7 @@ main{
     color: var(--color-white);
     font-weight: 600;
     padding: 15px 60px;
+    margin-bottom: 1rem;
     
 }
 
@@ -154,10 +152,14 @@ main{
     text-align: center;
 }
 
+.demo-card-img {
+    align-self: flex-end;
+}
+
 .demo-card-img img{
     width: 100%;
-    margin-bottom:-70px;
-    padding: 40px;
+    margin-bottom:-30px;
+    /* padding: 40px; */
 }
 
 .card .fa-solid {
@@ -191,7 +193,7 @@ main{
 .planning-title,
 .planning-text {
     color: var(--color-white);
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 1.5rem 0rem;
 }
 
 .planning-title {
@@ -200,7 +202,7 @@ main{
 }
 
 .planning-text {
-    line-height: 1.75rem;
+    line-height: 1.25rem;
 }
 
 .planning-card{
@@ -214,16 +216,19 @@ main{
 
 .planning-card-img {
     width: 100%;
+    padding: 20px;
 }
 
 .planning-card-title{
-    margin: 2rem 0rem;
+    margin: 1.0rem 0rem;
+    font-size: 25px;
 }
 
 .planning-card-text{
-    padding: 0 2rem;
+    padding: 0px 20px;
     line-height: 1.75rem;
     margin-bottom: 2rem;
+    font-size: 18px;
 }
 
 .planning-card-btn {
@@ -318,8 +323,12 @@ main{
     padding: 20px;
 }
 
-.benefits-cards h2{
-    font-size: 50px;
+.benefits-cards h2 {
+    font-size: 40px;
+}
+
+.benefits-cards h3 {
+    font-size: 20px;
 }
 
 .benefits-color-text{
@@ -463,21 +472,17 @@ footer {
 ################### */
 
 
-/* @@@@@@  TABLET @@@@@@ */
+/* &&&&&&&&&&&&& TABLET &&&&&&&&&&&&&*/
 
 @media all and (min-width: 768px) {
     
-/* $$$$$$$$$$$ 
-    HEADER 
-$$$$$$$$$$$ */
+/* $$$$$$$$$$$ HEADER $$$$$$$$$$$ */
     
     .desktop-menu {
         display: none;
     }
 
-/* $$$$$$$$$$$ 
-    MAIN 
-$$$$$$$$$$$ */
+/* $$$$$$$$$$$ MAIN $$$$$$$$$$$ */
 
 /* @@@@@@  APP SECTION @@@@@@   */
 
@@ -500,8 +505,14 @@ $$$$$$$$$$$ */
 
     .demo-card p,
     .demo-card .card-title {
+        align-self: flex-start;
         text-align: left;
     }
+
+    .app-btn{
+        align-self: flex-start;
+    }
+
 
 /* @@@@@@ TESTIMONIALS SECTION @@@@@@ */
 
@@ -563,9 +574,7 @@ $$$$$$$$$$$ */
     margin: 0 auto;
 }
 
-/* $$$$$$$$$$$ 
-    FOOTER
-$$$$$$$$$$$ */
+/* $$$$$$$$$$$ FOOTER $$$$$$$$$$$ */
 
 .footer-section-container {
     width: 60%;
@@ -574,9 +583,9 @@ $$$$$$$$$$$ */
 
 }
 
-/* @@@@@@ DESKTOP @@@@@@ */
+/* &&&&&&&&&&&&& DESKTOP &&&&&&&&&&&&&*/
 
-/* ++++ HEADER ++++ */
+/* $$$$$$$$$$$ HEADER $$$$$$$$$$$ */
 
 @media all and (min-width: 992px) {
     
@@ -593,36 +602,87 @@ $$$$$$$$$$$ */
         display: none;
     }
 
-/* ++++ MAIN ++++ */
+/* $$$$$$$$$$$ MAIN $$$$$$$$$$$ */
 
-/* --- APP SECTION ---  */
+/*@@@@@@ APP SECTION @@@@@@*/
 
-.cards-container {
+    .cards-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-content {
+        flex-direction: row;
+    }
+
+    .demo-card-img,
+    .demo-card-text {
+        width: calc(100% / 2);
+    }
+
+/* @@@@@@ STRATEGIC PLANNING SECTION @@@@@@ */
+
+    .planning-container {
     width: 80%;
     margin: 0 auto;
-}
-
-.card-content {
     flex-direction: row;
-}
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content:space-between;
+    }
 
+    .planning-1st-box {
+        width: calc(100% / 2 - 20px);
+        align-self:flex-end;
+        margin-bottom: -30px;
+    }
 
-.demo-card-img,
-.demo-card-text {
-    width: 50%;  
-}
+    .planning-card {
+        width: calc(100% / 2 - 20px);
+        align-self:flex-end;
+    }
 
+    .planning-card-img {
+        width: 60%;
+    }
+
+    .planning-card-text {
+        text-align: center;
+        
+    }
+
+/* @@@@@@ TESTIMONIALS SECTION @@@@@@ */
+
+    .testimonials-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
 /* @@@@@@ BENEFITS SECTION @@@@@@ */
 
-.benefits-container {
-    width: 80%;
-    margin: 0 auto;
-}
+    .benefits-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.benefits-cards {
-    width: calc(100% / 3 - 30px)
-}
+    .benefits-cards {
+        width: calc(100% / 3 - 30px)
+    }
+
+/* @@@@@@ ABOUT US SECTION @@@@@@ */
+
+    .about-us-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+/* @@@@@@ GET STARTED SECTION @@@@@@ */
+
+    .get-started-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
 /* @@@@@@ LARGE DESKTOP @@@@@@ */
 
 }
