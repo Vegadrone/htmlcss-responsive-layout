@@ -138,20 +138,26 @@ main{
     color: var(--color-white);
     font-weight: 600;
     padding: 15px 60px;
+    
 }
 
 .fa-apple{
     margin-right: 10px;
 }
 
-.demo-card-img{
-    /* max-width: 300px; */
+.demo-card-text {
+    flex-direction: column;
+    align-items: center;
 }
 
-.card img {
+.demo-card-text p {
+    text-align: center;
+}
+
+.demo-card-img img{
     width: 100%;
-    margin-top: 2rem;
-    
+    margin-bottom:-70px;
+    padding: 40px;
 }
 
 .card .fa-solid {
@@ -188,8 +194,9 @@ main{
     margin: 2rem 0rem 2rem 0rem;
 }
 
-.planning-title{
-    font-size: 30px;
+.planning-title {
+    font-size: 40px;
+    align-self: flex-start;
 }
 
 .planning-text {
@@ -280,6 +287,7 @@ main{
 
 .names {
     margin: 2rem 0rem;
+    font-size: 18px;
 }
 
 /* @@@@@@ BENEFITS SECTION @@@@@@ */
@@ -296,7 +304,7 @@ main{
     color: var(--color-white);
     margin: 2rem 0rem;
     text-align: center;
-    line-height: 2.5rem;
+    padding-top: 2rem ;
 
 }
 
@@ -375,6 +383,8 @@ main{
     color: var(--color-white);
     padding: 15px 20px;
     margin: 2rem 0rem;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .about-us-btn .fa-linkedin{
@@ -457,23 +467,30 @@ footer {
 
 @media all and (min-width: 768px) {
     
-/* ++++ HEADER ++++ */
+/* $$$$$$$$$$$ 
+    HEADER 
+$$$$$$$$$$$ */
+    
     .desktop-menu {
         display: none;
     }
-/* ++++ MAIN ++++ */
 
-/* --- APP SECTION ---  */
+/* $$$$$$$$$$$ 
+    MAIN 
+$$$$$$$$$$$ */
+
+/* @@@@@@  APP SECTION @@@@@@   */
 
     .cards-container {
         display: flex;
         flex-wrap: wrap;
+        padding: 12px;
     }
 
     .demo-card {
         width: calc(66.666% - 1.5rem);
     }
-    
+
     .code-card,
     .web-card,
     .dev-card,
@@ -485,6 +502,76 @@ footer {
     .demo-card .card-title {
         text-align: left;
     }
+
+/* @@@@@@ TESTIMONIALS SECTION @@@@@@ */
+
+    .testimonials-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .testimonials-card-text-container {
+        width: 50%;
+    }
+
+    .testimonials-card-text {
+        line-height: 1.5rem ;
+        text-align: left;
+        align-items: center;
+        margin:0;
+        margin-left: 2rem; 
+        font-size: 18px;
+    }
+
+    .names {
+        margin-top: 1rem;
+    }
+/* @@@@@@ BENEFITS SECTION @@@@@@ */
+
+    .benefits-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px;
+    }
+
+    .benefits-cards {
+        width: calc(100% / 2 - 30px )
+    }
+
+/* @@@@@@ ABOUT US SECTION @@@@@@ */
+
+.about-us-container {
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.about-us-text-area {
+    width: 60%;
+}
+
+.about-us-findme {
+    width: 30%;
+}
+
+/* @@@@@@ GET STARTED SECTION @@@@@@ */
+
+.get-started-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* $$$$$$$$$$$ 
+    FOOTER
+$$$$$$$$$$$ */
+
+.footer-section-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
 }
 
 /* @@@@@@ DESKTOP @@@@@@ */
@@ -525,6 +612,17 @@ footer {
     width: 50%;  
 }
 
+
+/* @@@@@@ BENEFITS SECTION @@@@@@ */
+
+.benefits-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefits-cards {
+    width: calc(100% / 3 - 30px)
+}
 /* @@@@@@ LARGE DESKTOP @@@@@@ */
 
 }
