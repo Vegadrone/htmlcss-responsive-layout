@@ -27,7 +27,9 @@ main{
      --color-purple: #9792e4;
      --color-white: #fff;
      --color-black: #000;
+     --color-grey: #333333;
      --accent-color: #fdc15f;
+     
  }
 
  .d-flex {
@@ -41,9 +43,16 @@ main{
      border-radius: 100%;
  }
 
+ .portrait-contain {
+     width: 250px;
+     height: 250px;
+     padding: 10px;
+ }
+
  .btn{
     border-radius: 20px;
     padding: 10px;
+    text-decoration: none;
  }
 
 /*################### 
@@ -125,7 +134,6 @@ main{
 }
 
 .app-btn{
-    text-decoration: none;
     background-color: var(--color-blue);
     color: var(--color-white);
     font-weight: 600;
@@ -212,7 +220,6 @@ main{
 }
 
 .planning-card-btn {
-    text-decoration: none;
     color: var(--color-black);
     background-color: var(--color-purple);
     border-radius: 100%;
@@ -223,6 +230,7 @@ main{
 }
 
 /* @@@@@@ TESTIMONIALS SECTION @@@@@@ */
+
 .testimonials-container{
     padding: 20px 20px 50px 20px;
     flex-direction: column;
@@ -247,12 +255,6 @@ main{
     font-size: 35px;
     text-align: center;
     margin: 2rem 0rem;
-}
-
-.portrait-contain{
-    width: 250px;
-    height: 250px;
-    padding: 20px;
 }
 
 .testimonials-card {
@@ -286,6 +288,163 @@ main{
     background-color: var(--color-purple);
 }
 
+.benefits-container {
+    flex-direction: column;
+}
+
+.benefits-container-title {
+    color: var(--color-white);
+    margin: 2rem 0rem;
+    text-align: center;
+    line-height: 2.5rem;
+
+}
+
+.benefits-cards {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    margin: 0px 12px;
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+
+.benefits-cards h2{
+    font-size: 50px;
+}
+
+.benefits-color-text{
+    align-self: flex-start;
+    color: var(--color-purple);
+    margin: 1rem 0rem;
+}
+
+.benefits-text {
+    margin-bottom: 2rem;
+    font-size: 15px;
+    line-height: 1.25rem;
+}
+
+.benefits-btn {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 15px 20px;
+    align-self: flex-start;  
+}
+
+/* @@@@@@ ABOUT US SECTION @@@@@@ */
+
+.about-us-container {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about-us-findme{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-us-title {
+    color: var(--color-purple);
+    font-size: 40px;
+    margin: 2rem 0rem;
+}
+
+.about-us-text {
+    margin: 1rem 0rem;
+    line-height: 2rem;
+}
+
+.about-us-portrait .fa-quote-left {
+    font-size: 80px;
+    color: var(--color-purple);
+    position: relative;
+    bottom:220px;
+    left:150px;
+}
+
+.about-us-findme h2 {
+    color: var(--color-purple);
+    line-height: 2.5rem;
+    margin: 2rem 0rem;
+}
+
+.about-us-btn {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 15px 20px;
+    margin: 2rem 0rem;
+}
+
+.about-us-btn .fa-linkedin{
+    margin-right: 5px;
+}
+
+/* @@@@@@ GET STARTED SECTION @@@@@@ */
+
+.get-started {
+    background-color: var(--color-purple);
+}
+.get-started-container{
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started-container h4 {
+   color: var(--color-white);
+   font-weight: 100;
+   text-align: center;
+}
+
+.stp {
+    color: var(--color-white);
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.get-started-container p,
+.get-started-container a{
+    color: var(--color-white);
+    text-align: center;
+    font-size: 16px;
+    margin: 2rem 0rem;
+    line-height: 1.75rem;
+}
+
+.accent-colored {
+    color: var(--accent-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.get-started-container .get-started-btn { 
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    padding: 15px 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ################### 
+        FOOTER 
+################### */
+
+footer {
+    background-color: var(--color-grey);
+}
+
+.footer-section-container p {
+    color: var(--color-white);
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem 20px;
+}
+
+.footer-section-container a {
+    color: var(--color-purple);
+}
 
 
 
